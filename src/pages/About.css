@@ -1,0 +1,174 @@
+.about-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+  color: white;
+  border-radius: 15px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+  color: #1976d2;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 10px;
+}
+
+.about-section p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.value-item {
+  text-align: center;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.value-item h3 {
+  color: #1976d2;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.value-item p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.benefits-list li {
+  padding: 15px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  color: #1976d2;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.benefits-list li:hover {
+  background: #bbdefb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 30px 15px;
+  }
+  
+  .about-hero {
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .about-section {
+    padding: 25px 20px;
+  }
+  
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .benefits-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 20px 10px;
+  }
+  
+  .about-hero {
+    padding: 25px 15px;
+  }
+  
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about-section {
+    padding: 20px 15px;
+  }
+  
+  .value-item {
+    padding: 20px 15px;
+  }
+  
+  .value-icon {
+    font-size: 2.5rem;
+  }
+}
